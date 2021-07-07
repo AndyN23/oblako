@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link">Slot menu #1</a></li>
+                <li class="header__item"><a href="#" class="header__link">Slot menu #2</a></li>
+                <li class="header__item"><a href="#" class="header__link">Slot menu #3</a></li>
+              </ul>
+            </nav>
+            <h2 class="header__top-title">Обучение</h2>
+            <a href="#" class="header__register">
+              <img src="img/icon-plus.svg" alt="Добавить">
+              <span> Запланировать</span>
+            </a>
+          </div>
+          <div class="header__body">
+            <div class="content">
+              <ul class="header__breadcrumbs ">
+                <li class="header__breadcrumbs-item">
+                  <a href="#" class="header__breadcrumbs-link">Главная</a>
+                </li>
+                <li class="header__breadcrumbs-item">
+                  <a href="#" class="header__breadcrumbs-link">Планирование</a>
+                </li>
+              </ul>
+              <div class="header__title">
+                <img src="img/plan-icon.svg" alt="" class="header__title-icon">
+                <h1 class="header__title-name">
+                  Планирование
+                </h1>      
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="main tabs">
+        <div class="container">
+          <div class="content">
+            <div class="tabs__wrapper">
+              <div class="tabs__container">
+                <a href="#tab-group" class="tab tab-group active">Групповое</a>
+                <a href="#tab-individ" class="tab tab-individ">Индивидуальное</a>
+              </div>
+              <div id="tab-group" class="tabs__content active">
+                
+                <div class="filter">
+                  <div class="filter__box search">
+                    <a href="#" class="search__btn">
+                      <img src="img/icon-search.svg"  class="searc__btn-icon" alt="Иконка поиска">
+                    </a>
+                    <input type="text" class="search__text" placeholder="Поиск">
+                  </div>
+    
+                  <div class="filter__box program select selected-container">
+                    <h3 class="select__name">Программа</h3>
+                    <div class="select__list selected-box">
+                      <div class="select__list-container options__container">
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="first" name="program">
+                            <label for="first" class="select-item__label">Первая</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="second" name="program">
+                            <label for="second" class="select-item__label">Вторая</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="all-program" name="program">
+                            <label for="all-program" class="select-item__label">Все</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item selected">Все</div>
+                    </div>
+                  </div>
+
+                  <div class="filter__box period select selected-container">
+                    <h3 class="select__name">Период</h3>
+                    <div class="select__list selected-box">
+                      <div class="select__list-container options__container">
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="july" name="period">
+                            <label for="july" class="select-item__label">Июль 2019</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="august" name="period">
+                            <label for="august" class="select-item__label">Август 2019</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="june" name="period">
+                            <label for="june" class="select-item__label">Июнь 2019</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item selected">Июнь 2019</div>
+                    </div>
+                  </div>
+
+                  <div class="filter__box status select selected-container">
+                    <h3 class="select__name">Статус</h3>
+                    <div class="select__list selected-box">
+                      <div class="select__list-container options__container">
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="even" name="status">
+                            <label for="even" class="select-item__label">Четные</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="odd" name="status">
+                            <label for="odd" class="select-item__label">Нечетные</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="all-status" name="status">
+                            <label for="all-status" class="select-item__label">Все</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item selected">Все</div>
+                    </div>
+                  </div>
+
+                  <div class="filter__box sort select selected-container">
+                    <h3 class="select__name">Сортировка</h3>
+                    <div class="select__list selected-box">
+                      <div class="select__list-container options__container">
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="progress-study" name="progress-study">
+                            <label for="progress-study" class="select-item__label">По прогрессу обучения</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="naming" name="naming">
+                            <label for="naming" class="select-item__label">По названию</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="students-count" name="students-count">
+                            <label for="students-count" class="select-item__label">По участникам</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item selected">По прогрессу обучения</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="setting">
+                  <ul class="setting__list">
+                    <li class="setting__item count">
+                      <h3 class="count__title">
+                        <span>34</span> сессии
+                      </h3>
+                    </li>
+                    <li class="setting__item filter-setting">
+                      <a href="#" class="setting__item-link filter-btn active">
+                        <svg  class="setting__filter-icon" fill="none" height="14" viewBox="0 0 14 14" width="14" 
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="m.25 10.75v1.5h4.5v-1.5zm0-9v1.5h7.5v-1.5zm7.5 12v-1.5h6v-1.5h-6v-1.5h-1.5v4.5zm-4.5-9v1.5h-3v1.5h3v1.5h1.5v-4.5zm10.5 3v-1.5h-7.5v1.5zm-4.5-3h1.5v-1.5h3v-1.5h-3v-1.5h-1.5z" 
+                        fill-rule="evenodd"/></svg>
+                        <span>Настроить фильтр</span>
+                      </a>
+                    </li>
+                    <li class="setting__item cancel-setting">
+                      <a href="#" class="setting__item-link cancel-btn">
+                        <svg class="setting__cancel-icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.5 1.5575L8.4425 0.5L5 3.9425L1.5575 0.5L0.5 1.5575L3.9425 5L0.5 8.4425L1.5575 9.5L5 6.0575L8.4425 9.5L9.5 8.4425L6.0575 5L9.5 1.5575Z" 
+                          fill-opacity="0.54"/>
+                        </svg>
+                        Сбросить
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="list">
+                  <div class="table">
+                    <div class="table__head">
+                      <ul class="table__row table-head">
+                        <li class="table__col date">Дата начала</li>
+                        <li class="table__col name">Название</li>
+                        <li class="table__col count">Участников</li>
+                        <li class="table__col coach">Тренер</li>
+                        <li class="table__col progress">Прогресс
+                          <img src="img/icon-arrow-up.svg" class="progress-image" alt="">
+                        </li>
+                        <li class="table__col settings"></li>
+                      </ul>
+                    </div>
+                    <div class="table__body">
+                      <ul class="table__row table-body">
+                        <li class="table__col date">23 дек, 9:00</li>
+                        <li class="table__col name">Страхование с заботой о клиенте</li>
+                        <li class="table__col count">12</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          95 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="table__row table-body">
+                        <li class="table__col date">14 ноя, 9:30</li>
+                        <li class="table__col name">Главные правила продаж</li>
+                        <li class="table__col count">10</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          91 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="table__row table-body">
+                        <li class="table__col date">19 окт, 14:30</li>
+                        <li class="table__col name">Первичное обучение КС</li>
+                        <li class="table__col count">8</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          86 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="table__row table-body">
+                        <li class="table__col date">10 окт, 16:00</li>
+                        <li class="table__col name">Вторичное обучение КС</li>
+                        <li class="table__col count">18</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          82 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="table__row table-body deactive">
+                        <li class="table__col date">5 окт, 15:00</li>
+                        <li class="table__col name">Вклады: теория и практика</li>
+                        <li class="table__col count">6</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          79 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="table__row table-body deactive">
+                        <li class="table__col date">27 сен, 11:00</li>
+                        <li class="table__col name">Очное обучение менеджеров</li>
+                        <li class="table__col count">20</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          73 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+    
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div id="tab-individ" class="tabs__content">
+                <div class="filter">
+                  <div class="filter__box search">
+                    <a href="#" class="search__btn">
+                      <img src="img/icon-search.svg"  class="searc__btn-icon" alt="Иконка поиска">
+                    </a>
+                    <input type="text" class="search__text" placeholder="Поиск">
+                  </div>
+    
+                  <div class="filter__box program select selected-container">
+                    <h3 class="select__name">Программа</h3>
+                    <div class="select__list selected-box">
+                      <div class="select__list-container options__container">
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="first-program" name="program">
+                            <label for="first-program" class="select-item__label">Первая</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="second-program" name="program">
+                            <label for="second-program" class="select-item__label">Вторая</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="all" name="program">
+                            <label for="all" class="select-item__label">Все</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item selected">Все</div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="filter__box period select selected-container">
+                    <h3 class="select__name">Период</h3>
+                    <div class="select__list selected-box">
+                      <div class="select__list-container options__container">
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="july" name="period">
+                            <label for="july" class="select-item__label">Июль 2019</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="august" name="period">
+                            <label for="august" class="select-item__label">Август 2019</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="june" name="period">
+                            <label for="june" class="select-item__label">Июнь 2019</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item selected">Июнь 2019</div>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="filter__box status select selected-container">
+                    <h3 class="select__name">Статус</h3>
+                    <div class="select__list selected-box">
+                      <div class="select__list-container options__container">
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="even" name="status">
+                            <label for="even" class="select-item__label">Четные</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="odd" name="status">
+                            <label for="odd" class="select-item__label">Нечетные</label>
+                          </div>
+                        </div>
+                        <div class="select-item">
+                          <div class="select-item__option">
+                            <input type="radio" class="select-item__radio" id="all" name="status">
+                            <label for="all" class="select-item__label">Все</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item selected">Все</div>
+                    </div>
+                  </div> -->
+                </div>
+
+                <div class="setting">
+                  <ul class="setting__list">
+                    <li class="setting__item count">
+                      <h3 class="count__title">
+                        <span>10</span> сессий
+                      </h3>
+                    </li>
+                    <li class="setting__item filter-setting">
+                      <a href="#" class="setting__item-link filter-btn active">
+                        <svg  class="setting__filter-icon" fill="none" height="14" viewBox="0 0 14 14" width="14" 
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="m.25 10.75v1.5h4.5v-1.5zm0-9v1.5h7.5v-1.5zm7.5 12v-1.5h6v-1.5h-6v-1.5h-1.5v4.5zm-4.5-9v1.5h-3v1.5h3v1.5h1.5v-4.5zm10.5 3v-1.5h-7.5v1.5zm-4.5-3h1.5v-1.5h3v-1.5h-3v-1.5h-1.5z" 
+                        fill-rule="evenodd"/></svg>
+                        Настроить фильтр
+                      </a>
+                    </li>
+                    <li class="setting__item cancel-setting">
+                      <a href="#" class="setting__item-link cancel-btn">
+                        <svg class="setting__cancel-icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.5 1.5575L8.4425 0.5L5 3.9425L1.5575 0.5L0.5 1.5575L3.9425 5L0.5 8.4425L1.5575 9.5L5 6.0575L8.4425 9.5L9.5 8.4425L6.0575 5L9.5 1.5575Z" 
+                          fill-opacity="0.54"/>
+                        </svg>
+                        Сбросить
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="list">
+                  <div class="table">
+                    <div class="table__head">
+                      <ul class="table__row table-head">
+                        <li class="table__col date">Дата начала</li>
+                        <li class="table__col name">Название</li>
+                        <li class="table__col count">Участников</li>
+                        <li class="table__col coach">Тренер</li>
+                        <li class="table__col progress">Прогресс
+                          <img src="img/icon-arrow-up.svg" class="progress-image" alt="">
+                        </li>
+                        <li class="table__col settings"></li>
+                      </ul>
+                    </div>
+                    <div class="table__body">
+                      <ul class="table__row table-body">
+                        <li class="table__col date">23 дек, 9:00</li>
+                        <li class="table__col name">Страхование с заботой о клиенте</li>
+                        <li class="table__col count">12</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          95 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="table__row table-body">
+                        <li class="table__col date">14 ноя, 9:30</li>
+                        <li class="table__col name">Главные правила продаж</li>
+                        <li class="table__col count">10</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          91 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="table__row table-body deactive">
+                        <li class="table__col date">5 окт, 15:00</li>
+                        <li class="table__col name">Вклады: теория и практика</li>
+                        <li class="table__col count">6</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          79 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul class="table__row table-body deactive">
+                        <li class="table__col date">27 сен, 11:00</li>
+                        <li class="table__col name">Очное обучение менеджеров</li>
+                        <li class="table__col count">20</li>
+                        <li class="table__col coach">&nbsp;</li>
+                        <li class="table__col progress">
+                          <img src="img/icon-progress.svg" alt="">
+                          73 %
+                        </li>
+                        <li class="table__col settings">
+                          <div class="settings__link tooltip">
+                            <div class="settings__btn tooltip__btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="tooltip__block" tabindex="0">
+                              <a href="#" class="tooltip__item redact">
+                                <img src="img/icon-pen.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Редактировать</span>
+                              </a>
+                              <a href="#" class="tooltip__item delete">
+                                <img src="img/icon-basket.svg" alt="" class="tooltip__img">
+                                <span class="tooptip__text">Удалить слот</span>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  <script src="js/burger.js"></script>
+  <script src="js/plan-btn.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/selects.js"></script>
+  <script src="js/tooltip.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
